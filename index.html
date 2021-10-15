@@ -11,9 +11,9 @@
     <!-- <button onclick="move()">Click me</button>  -->
 
 <div id ="myContainer" >
-    <div id ="green" onclick="green()"></div>
-    <div id ="blue"onclick="blue()" ></div>
-    <div id ="red" onclick="red()"></div>
+    <div id ="green" ></div>
+    <div id ="blue" ></div>
+    <div id ="red" ></div>
    
    
     
@@ -26,7 +26,7 @@
         let pos=0;
     
          let redBall=document.getElementById("red");
-         function red(){
+        
                  setInterval(()=>{
             if (pos == 500) {
       clearInterval(id);
@@ -36,8 +36,8 @@
       redBall.style.left = pos + 'px'; 
     }
   
-})
-         }
+},5)
+         
 
 
 
@@ -45,7 +45,7 @@ var id1 = null;
       
         let pos1=0;
          let blueBall=document.getElementById("blue");
-         function blue(){
+       
         setInterval(()=>{
             if (pos1 == 550) {
       clearInterval(id1);
@@ -55,8 +55,8 @@ var id1 = null;
       blueBall.style.right = pos1 + 'px'; 
     }
   
-} )
-         }
+},5 )
+         
 
 
 
@@ -64,7 +64,7 @@ var id2 = null;
       
         let pos2=0;
          let greenBall=document.getElementById("green");
-function green(){
+
         setInterval(()=>{
             if (pos2 == 600) {
       clearInterval(id2);
@@ -74,9 +74,9 @@ function green(){
       
     }
   
-})
+},5)
 
-}
+
 
 
 
