@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>three balls</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ <body> 
+    <!-- <button onclick="move()">Click me</button>  -->
+
+<div id ="myContainer" >
+    <div id ="green" onclick="green()"></div>
+    <div id ="blue"onclick="blue()" ></div>
+    <div id ="red" onclick="red()"></div>
+   
+   
+    
+    
+
+    <script>
+     
+        var id = null;
+      
+        let pos=0;
+    
+         let redBall=document.getElementById("red");
+         function red(){
+                 setInterval(()=>{
+            if (pos == 500) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      redBall.style.top = pos + 'px'; 
+      redBall.style.left = pos + 'px'; 
+    }
+  
+})
+         }
+
+
+
+var id1 = null;
+      
+        let pos1=0;
+         let blueBall=document.getElementById("blue");
+         function blue(){
+        setInterval(()=>{
+            if (pos1 == 550) {
+      clearInterval(id1);
+    } else {
+      pos1++; 
+      blueBall.style.top = pos1 + 'px'; 
+      blueBall.style.right = pos1 + 'px'; 
+    }
+  
+} )
+         }
+
+
+
+var id2 = null;
+      
+        let pos2=0;
+         let greenBall=document.getElementById("green");
+function green(){
+        setInterval(()=>{
+            if (pos2 == 600) {
+      clearInterval(id2);
+    } else {
+      pos2++; 
+      greenBall.style.top = pos2 + 'px'; 
+      
+    }
+  
+})
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+    
+
+
+    </script>
+</body>
+</html>
